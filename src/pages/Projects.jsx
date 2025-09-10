@@ -43,7 +43,7 @@ gsap.registerPlugin(ScrollTrigger);
 
       <div className='-lg:mt-20  pj'>
         {projects.map(function(elem,idx){
-        return <div key={idx} className='hero w-full lg:h-[600px] mb-4 flex lg:flex-row  flex-col lg:gap-4 gap-2'>
+        return <div key={idx} className='hero w-full  lg:h-[600px] h-[650px] lg:mb-4 mb-2 flex lg:flex-row  flex-col lg:gap-4 gap-2'>
            <ProjectsCard image1={elem.image1} image2={elem.image2}/>
         </div>
         })}
