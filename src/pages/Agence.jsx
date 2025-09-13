@@ -9,53 +9,51 @@ const Agence = () => {
   const imageRef = useRef(null)
 
   const ImageArray = [
-    'https://k72.ca/uploads/teamMembers/Carl_480x640-480x640.jpg',
-    'https://k72.ca/uploads/teamMembers/Olivier_480x640-480x640.jpg',
-    'https://k72.ca/uploads/teamMembers/Lawrence_480x640-480x640.jpg',
-    'https://k72.ca/uploads/teamMembers/HugoJoseph_480x640-480x640.jpg',
-    'https://k72.ca/uploads/teamMembers/ChantalG_480x640-480x640.jpg',
-    'https://k72.ca/uploads/teamMembers/MyleneS_480x640-480x640.jpg',
-    'https://k72.ca/uploads/teamMembers/SophieA_480x640-480x640.jpg',
-    'https://k72.ca/uploads/teamMembers/Claire_480x640-480x640.jpg',
-    'https://k72.ca/uploads/teamMembers/MEL_480X640-480x640.jpg',
-    'https://k72.ca/uploads/teamMembers/CAMILLE_480X640_2-480x640.jpg',
-    'https://k72.ca/uploads/teamMembers/MAXIME_480X640_2-480x640.jpg',
-    'https://k72.ca/uploads/teamMembers/MEGGIE_480X640_2-480x640.jpg',
-    'https://k72.ca/uploads/teamMembers/joel_480X640_3-480x640.jpg',
-    'https://k72.ca/uploads/teamMembers/Michele_640X980-640x960.jpg',
+    '/images/img1.jpg',
+    '/images/img2.jpg',
+    '/images/img3.jpg',
+    '/images/img4.jpg',
+    '/images/img5.jpg',
+    '/images/img6.jpg',
+    '/images/img7.jpg',
+    '/images/img8.jpg',
+    '/images/img9.jpg',
+    '/images/img10.jpg',
+    '/images/img11.jpg',
+    '/images/img12.jpg',
+    '/images/img13.jpg',
+    '/images/img14.jpg',
   ]
 
   gsap.registerPlugin(ScrollTrigger)
 
 
-  useGSAP(function () {
+  useGSAP(() => {
     gsap.to(imageDivRef.current, {
       scrollTrigger: {
         trigger: imageDivRef.current,
         pin: true,
-        pinSpacing:true,
-        pinReparent:true,
-        pinType:'transform',
-        scrub:1,
-        anticipatePin:1,
-        invalidateOnRefresh:true,
-
+        pinSpacing: true,
+        pinReparent: true,
+        pinType: 'transform',
+        scrub: 1,
+        anticipatePin: 1,
+        invalidateOnRefresh: true,
         start: 'top 0%',
-        end: 'top -170%',
+        end: 'top -190%',
         onUpdate: (elem) => {
           let imageIndex;
 
           if (elem.progress < 1) {
-            imageIndex =  Math.max(0, Math.floor(elem.progress * (ImageArray.length - 1)))
+            imageIndex = Math.max(0, Math.floor(elem.progress * (ImageArray.length - 1)))
           } else {
-            imageIndex =ImageArray.length-1
+            imageIndex = ImageArray.length - 1
           }
           imageRef.current.src = ImageArray[imageIndex]
         }
-
       }
     })
-  })
+  }, [])
 
   return (
     <div>

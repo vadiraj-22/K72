@@ -115,11 +115,11 @@ const FullScreenNav = () => {
                         <div className=' moveLink absolute flex top-0 text-black bg-[#D3FD50] '>
                             <div className='moveX flex gap-5  items-center'>
                                 <h2 className='whitespace-nowrap uppercase lg:text-[8vw] text-[13.5vw] font-[font2] text-center lg:leading-[0.8] leading-[0.2] lg:mt-0 mt-2  lg:pt-5 pt-0'>See everything </h2>
-                                <img className='lg:h-20 h-13 py-1.5 rounded-full shrink-0 lg:w-60 w-30 object-cover' src="https://k72.ca/uploads/caseStudies/PJC/Thumbnails/PJC_SiteK72_Thumbnail_640x290-640x290.jpg" alt="" />
+                                <img className='lg:h-20 h-13 py-1.5 rounded-full shrink-0 lg:w-60 w-30 object-cover' src="/images/nav1.jpg" alt="" />
                                 <h2 className='whitespace-nowrap uppercase lg:text-[8vw] text-[13.5vw] font-[font2] text-center lg:leading-[0.8] leading-[0.2] lg:mt-0 mt-2   lg:pt-5 pt-0'>See everything </h2>
-                                <img className='lg:h-20 h-13 py-1.5 rounded-full shrink-0 lg:w-60 w-30 object-cover' src="https://k72.ca/uploads/caseStudies/WIDESCAPE/WS---K72.ca---MenuThumbnail-640x290.jpg" alt="" />
+                                <img className='lg:h-20 h-13 py-1.5 rounded-full shrink-0 lg:w-60 w-30 object-cover' src="/images/nav2.jpg" alt="" />
                             </div>
-                            <div className='moveX flex   items-center'>
+                            <div className='moveX flex gap-5  items-center'>
                                 <h2 className='whitespace-nowrap uppercase lg:text-[8vw] text-[13.5vw] font-[font2] text-center lg:leading-[0.8] leading-[0.2] lg:mt-0 mt-2  lg:pt-5 pt-0'>See everything </h2>
                                 <img className='lg:h-20 h-13 py-1.5 rounded-full shrink-0 lg:w-60 w-30 object-cover' src="https://k72.ca/uploads/caseStudies/PJC/Thumbnails/PJC_SiteK72_Thumbnail_640x290-640x290.jpg" alt="" />
                                 <h2 className='whitespace-nowrap uppercase lg:text-[8vw] text-[13.5vw] font-[font2] text-center lg:leading-[0.8] leading-[0.2] lg:mt-0 mt-2  lg:pt-5 pt-0'>See everything </h2>

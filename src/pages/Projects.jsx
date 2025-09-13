@@ -7,31 +7,37 @@ import { ScrollTrigger } from 'gsap/all'
 const Projects = () => {
 
   const projects = [{
-    image1:'https://k72.ca/uploads/caseStudies/WIDESCAPE/WS---K72.ca---Thumbnail-1280x960.jpg',
-    image2:'https://k72.ca/uploads/caseStudies/OKA/OKA_thumbnail-1280x960.jpg'
+    image1:'/images/project1.jpg',
+    image2:'/images/project2.jpg'
   },{
-    image1:'https://k72.ca/uploads/caseStudies/COUP_FUMANT/CF_thumbnail-1280x960.jpg',
-    image2:'https://k72.ca/uploads/caseStudies/SHELTON/thumbnailimage_shelton-1280x960.jpg'
+    image1:'/images/project3.jpg',
+    image2:'/images/project4.jpg'
   },{
-    image1:'https://k72.ca/uploads/caseStudies/OSM/thumbnailimage_OSM-1280x960.jpg',
-    image2:'https://k72.ca/uploads/caseStudies/BAnQ_100TEMPS/100temps_Thumbnail-1280x960.jpg'
-  },]
-gsap.registerPlugin(ScrollTrigger);
-  
-  useGSAP(function(){
-    gsap.from('.hero',{
-      height:'100px',
-      stagger:{
-        amount:0.6
-      },
-      scrollTrigger:{
-        trigger:'.pj',
-        start: 'top 85%',
-        end:'top -175%',
-        scrub:true
-      }
-    })
+    image1:'/images/project5.jpg',
+    image2:'/images/project6.jpg'
+  },{
+    image1:'/images/project7.jpg',
+    image2:'/images/project8.jpg'
+  },
+
+]
+
+gsap.registerPlugin(ScrollTrigger)
+
+useGSAP(function () {
+  gsap.from('.hero', {
+    height: '100px',
+    stagger: {
+      amount: 0.5
+    },
+    scrollTrigger: {
+      trigger: '.pj',
+      start: 'top 85%',
+      end: 'top -175%',
+      scrub: true
+    }
   })
+})
 
 
 
